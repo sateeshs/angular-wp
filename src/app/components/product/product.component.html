@@ -1,1 +1,75 @@
-<p>product works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col md-6">
+            <img class="card-image" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" >
+        </div>
+        <div class="col-md-6">
+            <div class="small mb-1">SKU: BST-498</div>
+            <h1 class="display-5 fw-bolder">Shop item template</h1>
+            <div class="row">
+                <ngb-rating [(rate)]="currentRate"></ngb-rating>
+             <pre>Rate: <b>{{currentRate}}</b></pre>
+            </div>
+            <div class="fs-5 mb-5">
+                <span class="text-decoration-line-through">$45.00</span>
+                <span>$40.00</span>
+            </div>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+            <div class="d-flex">
+                <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem">
+                <select>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                
+            </div>
+            <div class="d-flex">
+                <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                    <i class="bi-cart-fill me-1"></i>
+                    Add to cart
+                </button>
+                <button>Favorite</button>
+                <button>Share</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Related Items-->
+<div class="container bg-light">
+    <h2 class="">Related products</h2>
+    <div class="row ">
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-widget></app-widget>
+          <!-- <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div> -->
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-plain-widget></app-plain-widget>
+        </div>
+      </div>
+</div>
