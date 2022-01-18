@@ -10,7 +10,7 @@ export class PlainWidgetComponent implements OnInit {
   constructor() { }
   //@Input()
   public icon!: IconNamesEnum;
-
+  currentRate =5;
   ngOnInit(): void {
   }
 

@@ -10,8 +10,8 @@ import { NgxBootstrapIconsModule, allIcons, ColorTheme } from 'ngx-bootstrap-ico
   declarations: [],
   imports: [
     NgbNavModule, NgbCollapseModule, NgxBootstrapIconsModule.pick(allIcons,  { 
-      width: '2em', 
-      height: '2em', 
+      width: '1em', 
+      height: '1em', 
       theme: ColorTheme.Danger,
   })
   ],
