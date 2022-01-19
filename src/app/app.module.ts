@@ -14,6 +14,7 @@ import { PlainWidgetComponent } from './components/plain-widget/plain-widget.com
 import { ProductComponent } from './components/product/product.component';
 import { ProductVariationComponent } from './components/product-variation/product-variation.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
     PlainWidgetComponent,
     ProductComponent,
     ProductVariationComponent,
-    ProductListComponent
+    ProductListComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

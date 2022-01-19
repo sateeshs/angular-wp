@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IconNamesEnum } from 'ngx-bootstrap-icons';
 @Component({
   selector: 'app-plain-widget',
@@ -7,11 +8,17 @@ import { IconNamesEnum } from 'ngx-bootstrap-icons';
 })
 export class PlainWidgetComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
   //@Input()
   public icon!: IconNamesEnum;
   currentRate =5;
+  id= 123
+
   ngOnInit(): void {
+  }
+
+  productDetails() {
+      this.router.navigateByUrl(`product/${this.id}`);
   }
 
 }
